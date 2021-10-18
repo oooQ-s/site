@@ -140,7 +140,7 @@ main .places{
     /* grid-template-columns: repeat(2, 20% [col start]); */
     /* grid-template-columns: 30% 70%; */
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(4,24%);
+    /* grid-template-rows: repeat(4,24%); */
     /* grid-column-gap: 3%;
     grid-row-gap: 6%; */
     grid-gap: 20px 3px;
@@ -333,7 +333,7 @@ footer ul li:last-child{
         /* grid-template-columns: repeat(2, 20% [col start]); */
         /* grid-template-columns: 30% 70%; */
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,13%);
+        /* grid-template-rows: repeat(4,13%); */
         /* grid-column-gap: 3%;
         grid-row-gap: 6%; */
         grid-gap: 5px 3px;
@@ -400,6 +400,9 @@ footer ul li:last-child{
     }
     footer ul{
         padding-left: 20px;
+    }
+    footer nav ul{
+        align-items: center;
     }
 }
 
