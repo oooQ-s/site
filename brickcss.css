@@ -1,0 +1,99 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main div{
+    background: url("pics/boy1.png");
+    background-position:left;
+    background-repeat: no-repeat;
+    opacity: 1;
+
+}
+
+.main img{
+    opacity: 0;
+}
+
+.main div:hover{
+    background: url("pics/boy2.png");
+}
+
+.main img:hover{
+    transition-timing-function: ease-in-out;
+    transition-duration: 1.5s;
+    opacity: 1;
+}
+
+
+.main div:first-child::before {
+    content: "Это мяч?...";
+    display: block;
+    position: absolute;
+    left: 18%;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    opacity: 0;
+}
+
+.main div:first-child:hover::before{
+    opacity: 1;
+}
+
+.main div:first-child:active:before{
+    opacity: 0;
+}
+
+.main:active div:first-child {
+    background: url("pics/boy3.png");
+    opacity: 1;
+    animation: shake .2s infinite alternate;
+}
+
+.main:active img{
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    transform: translate(70px, -50%) rotate(-43deg);
+}
+
+
+.main div:first-child::after {
+    
+    content: "Это кирпич...";
+    display: block;
+    position: absolute;
+    top:  0%;
+    left: 20%;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    opacity: 0;
+}
+
+.main div:first-child:active::after{
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+    opacity: 1;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-12px); }
+  33% { transform: translateX(-10px); }
+  66% { transform: translateX(-14px); }
+  100% { transform: translateX(-8px); }
+  }
+
+.back{
+    position: sticky;
+}

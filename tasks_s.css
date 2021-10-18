@@ -1,0 +1,68 @@
+
+body{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    margin: 0;
+    -ms-overflow-style: none;  /* HIDE SCROLLBAR FOR IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+h1{
+    color: #020202; font-family: "Great Vibes", cursive;
+    font-size: 80px; 
+    line-height: 100px; 
+    font-weight: normal;
+    margin-bottom: 0px; 
+    margin-top: 40px;
+    text-align: center;
+}
+
+h2{
+    font-size: 350%; 
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px #31c904;
+    line-height: 100px; 
+    font-weight: normal;
+    margin-bottom: 0px; 
+    margin-top: 40px;
+}
+
+h3{
+    font-size: 200%; 
+    color: rgb(0, 0, 0);
+    line-height: 70px; 
+    font-weight: normal;
+    margin-bottom: 0px; 
+    margin-top: 10px;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;    
+}
+
+.back{
+    position: absolute;
+    left: 40%;
+    margin: auto;
+}
+
+.back a{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    padding: 15px 31px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+.back a:hover{
+    background-color: #4CAF50;
+    color: white;
+}
